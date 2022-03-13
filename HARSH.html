@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Login Form Design"</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form name=f1> 
+            <p>Username Daloo</p>
+            <input type="text" name="t1" placeholder="Enter Username">
+            <p>Password Daloo</p>
+            <input type="password" name="t2" placeholder="Enter Password">
+            <input type="button" name="" onclick="valida()" value="Login" >
+            <br>
+        </form>
+        <script>
+	function valida()
+	{
+	var a=document.f1.t1.value;
+	var b=document.f1.t2.value;
+	var c="harsh";
+	var d="haria";
+	var t="<p align=center><font color=red size=9><br><br><br><br><br>LOGIN VALID..... Click Here</font></p>";	
+	if(a==c && b==d)
+	{
+	document.write("<p>" + t.link("project2.html") + "</p>");
+	}
+	else
+	{
+	alert("invalid");	
+	}
+	}
+	</script>
+    </div>
+</body>
+</head>
+</html>

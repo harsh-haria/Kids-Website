@@ -1,0 +1,77 @@
+<html>
+    <head>
+        
+        <title>calculate two numbers</title>
+        	
+        <style>
+	body
+	{
+	background-size: auto;
+	border: 2px solid black;
+	}
+	
+	h1
+	{
+	text-align:center;
+	}
+	
+	#n3
+	{
+	padding: 150px;
+	}
+	</style>
+	
+	<script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <body background="pic2.jpg">
+		<h1>CALCULATOR</h1>
+        <div id=n3>
+		<div align=center>
+	<input align= type="text" placeholder=number-1 id="n1" class="a1"><br/><br/>
+        <input type="text" id="n2" placeholder=number-2 class="a1"><br/><br/>
+        
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select><br><br>
+        
+        <button onclick="calc();">=</button><br><br>
+        <input type="text" placeholder=Answer id="result"/>
+        </div>
+		</div>
+    </body>
+</html>

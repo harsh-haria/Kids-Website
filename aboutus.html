@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>
+ABOUT US
+</title>
+<style>
+
+input[type=text], textarea {
+width: 35%;
+padding: 12px 12px;
+margin: 8px 0; 
+border: 3px solid pink;
+border-radius:10px;
+-webkit-transition: 0.5s; 
+transition: 0.5s;
+outline: none;
+}
+
+input[type=text]:focus {
+border: 3px solid #555;
+}
+
+textarea:focus {
+border: 3px solid #555;
+}
+
+
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+
+input[type=submit] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: center;
+}
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+iframe{
+padding: 5px;
+border-style:dashed;
+border-width: 5px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+</head>
+<body bgcolor=MediumTurquoise>
+<h1 align=center style="color:RoyalBlue;">ABOUT US!</h1><br>
+<P style="color:MediumPurple;"><font size=5><b>
+Our organization has started a website for kids upto 5th grade. This website will give short information about every subject that kids usually find difficult to study.</b></font>  
+</p><br>
+<p style="color:DodgerBlue;">
+<font size=5><b>For further details contact us on our email-id </b></font><font color=red size=5>harsh@kidswebsite.com</font></p><br>
+<hr>
+<p align=center><font size=5>Here is a video thats shows you other top 10 kids website</font></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5NCnErLjnQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
+<hr>
+<h1 align=center>FEEDBACK!</h1>
+<br>
+<br>
+
+<form align=center action="1.php" method=POST>
+<input type=text name=n1 placeholder=Name><br><br>
+<input type=text name=e1 placeholder="Email-Id"><br><br>
+<input type=text name=n2 placeholder=Subject><br><br>
+<textarea placeholder="Write here!" name=t1 ></textarea><br><br>
+<input type=submit name=b1 >
+</form>
+<hr>
+<br>
+<a href=http://localhost/phpmyadmin/><font color=red>for accessing database click here!</font></a>
+</body>
+</html>
